@@ -22,10 +22,6 @@ public Leilao(String descricao, List<Lance> lances){
        this.descricao = descricao;
        this.lances = new ArrayList<Lance>();
    }
-
-public Leilao() {
-      
-    }
     
    public void encerra(){
        

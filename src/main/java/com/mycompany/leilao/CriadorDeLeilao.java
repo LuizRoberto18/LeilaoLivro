@@ -5,7 +5,7 @@ public class CriadorDeLeilao {
     public CriadorDeLeilao(){}
     
     public CriadorDeLeilao para(String descricao){
-        this.leilao = new Leilao();
+        this.leilao = new Leilao(descricao);
         return this;
     }
     public CriadorDeLeilao lance(Usuario usuario, double valor){
