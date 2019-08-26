@@ -1,5 +1,7 @@
 package com.mycompany.leilao;
 
+import java.util.List;
+
 import com.mycompany.leilao.Lance;
 
 public class Usuario {
@@ -7,6 +9,7 @@ public class Usuario {
     private String usuario;
     private String nome;
     private String email;
+    private List<Lance> lances;
    
 
 	public   Usuario(String usuario, String nome, String email){
@@ -24,7 +27,7 @@ public class Usuario {
     	this.email = email;
     }
     public void propoe(Lance lance){
-        if(lances.isEmpty() || podeDarLance(lance.getUsuario())
+        if(lances.isEmpty() || podeDarLance(lance.getUsuario()))
         {
             lances.add(lance);
         }

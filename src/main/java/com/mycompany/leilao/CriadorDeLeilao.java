@@ -1,4 +1,7 @@
 package com.mycompany.leilao;
+
+import java.util.Calendar;
+
 public class CriadorDeLeilao {
     private Leilao leilao;
     
@@ -17,6 +20,11 @@ public class CriadorDeLeilao {
     }
 
 	public Session getSession() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public CriadorDeLeilao naData(Calendar antiga) {
 		// TODO Auto-generated method stub
 		return null;
 	}

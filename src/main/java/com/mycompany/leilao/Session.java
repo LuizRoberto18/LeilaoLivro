@@ -26,8 +26,24 @@ public class Session {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void save(Usuario usuario) {
+    void save(Leilao leilao) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+	public static Object createQuery(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public Usuario load(Class<Usuario> class1, int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public void beginTransaction() {
+		// TODO Auto-generated method stub
+		
+	}
+	public Object getTransaction() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }

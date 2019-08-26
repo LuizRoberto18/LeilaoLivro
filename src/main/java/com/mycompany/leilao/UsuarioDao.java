@@ -11,7 +11,7 @@ public class UsuarioDao {
     }
     
     public Usuario porNomeEEmail(String nome, String email){
-        return (Usuario) session.createQuary(
+        return (Usuario) Session.createQuery(
                 "from Usuario u where u.nome = :nome and x.email = :email")
                 .setParameter("nome", nome)
                 .setParameter("email", email)

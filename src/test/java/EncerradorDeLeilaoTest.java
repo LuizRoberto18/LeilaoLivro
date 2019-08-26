@@ -2,6 +2,7 @@
 import com.mycompany.leilao.CriadorDeLeilao;
 import com.mycompany.leilao.EncerradorDeLeilao;
 import com.mycompany.leilao.Leilao;
+import com.mycompany.leilao.LeilaoDao;
 import com.mycompany.leilao.LeilaoDaoFalso;
 import java.util.Arrays;
 import java.util.Calendar;
@@ -25,15 +26,15 @@ public class EncerradorDeLeilaoTest {
        
         List<Leilao> leiloesAntigos = new Arrays.asList(leilao1, leilao2);
        
-        LeilaoDao daoFalso = mock(leilaoDao.class);
+        LeilaoDao daoFalso = mock(LeilaoDao.class);
         
         when(daoFalso.correntes()).thenReturn(leiloesAntigos);
                 
         EncerradorDeLeilao encerrador = new EncerradorDeLeilao();
         encerrador.encerra();
         
-        assertTrue(leilao1.isEncerrado());
-        assertTrue(leilao2.isEncerrado());
+        assertTrue(leilao1.iSEncerrado());
+        assertTrue(leilao2.iSEncerrado());
         assertEquals(2, encerrador.getQuantidadeDeEncerrados());
 
     }

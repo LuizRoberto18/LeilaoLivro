@@ -24,14 +24,14 @@ public class Avaliador {
                 menorDeTodos = lance.getValor();
         }
       
-        tresMaiores(leilao);
+        pegaOsMaioresNo(leilao);
     }
     public void pegaOsMaioresNo(Leilao leilao){
-        maiores new ArrayList<Lance.(leilao.getLances());
+        maiores = new ArrayList<Lance>(leilao.getLances());
         Collections.sort(maiores, new Comparator<Lance>(){
-            public int compare(Lance 01, Lance 02){
-                if(01.getValor() < 02.getValor()) return 1;
-                if(01.getValor() > 02.getValor()) return -1;
+            public int compare(Lance o1, Lance o2){
+                if(o1.getValor() < o2.getValor()) return 1;
+                if(o1.getValor() > o2.getValor()) return -1;
                 return 0;
             	}
             });

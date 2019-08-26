@@ -50,9 +50,9 @@ public class LeilaoTest {
         
         leilao.propoe(new Lance(steveJobs, 2000));
         leilao.propoe(new Lance(billGates, 3000));
-        leilao.propoe(new Lance(steveJob, 4000));
+        leilao.propoe(new Lance(steveJobs, 4000));
         leilao.propoe(new Lance(billGates, 5000));
-        leilao.propoe(new Lance(steveJob, 6000));
+        leilao.propoe(new Lance(steveJobs, 6000));
         leilao.propoe(new Lance(billGates, 7000));
         leilao.propoe(new Lance(steveJobs, 8000));
         leilao.propoe(new Lance(billGates, 9000));

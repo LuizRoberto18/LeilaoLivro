@@ -6,7 +6,7 @@ public class Pagamento {
     private double valor;
     private Calendar data;
     
-    public void Pagamento(double valor, Calendar data){
+    public  Pagamento(double valor, Calendar data){
         this.valor = valor;
         this.data = data;
     }

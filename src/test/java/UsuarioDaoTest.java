@@ -17,7 +17,7 @@ public class UsuarioDaoTest {
         UsuarioDao usuarioDao = new UsuarioDao(session);
         
         //criando usuario e saalvando antesde invocar o porNmeEEmail
-        Usuario novoUsuario new Usuario("Joao da silva", "joao@dasilva.com.br");
+        Usuario novoUsuario = new Usuario("Joao da silva", "joao@dasilva.com.br");
         usuarioDao.salvar(novoUsuario);
         
         //agora buscando no Banco de dados
@@ -34,12 +34,13 @@ public class UsuarioDaoTest {
         
         Usuario usuario = new Usuario("mauricio aniche", "mauricio@aniche.com.br");
         
-        usuarioDao.salvar(usuario);
+        UsuarioDao usuarioDao;
+		usuarioDao.salvar(usuario);
         usuarioDao.deletar(usuario);
         
-        session.flush();
+        Session.flush();
         
-        Usuario usuarioNoBanco = usuarioDao.pNomeEEmail("mauricio aniche", "mauricio@aniche.com.br");
+        Usuario usuarioNoBanco = usuarioDao.porNomeEEmail("mauricio aniche", "mauricio@aniche.com.br");
         
         assertNull(usuarioNoBanco);
     
