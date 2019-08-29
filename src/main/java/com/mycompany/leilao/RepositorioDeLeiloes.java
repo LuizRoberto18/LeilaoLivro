@@ -2,7 +2,7 @@ package com.mycompany.leilao;
 
 import java.util.List;
 
-class RepositorioDeLeiloes {
+public class RepositorioDeLeiloes {
 
 	public List<Leilao> encerrados() {
 		// TODO Auto-generated method stub

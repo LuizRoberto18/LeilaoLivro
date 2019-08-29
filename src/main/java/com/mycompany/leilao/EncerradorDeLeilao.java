@@ -7,9 +7,13 @@ import java.util.List;
 public class EncerradorDeLeilao {
 
 	private int total = 0;
-	private LeilaoDao dao;
+	private RepositorioDeLeiloes dao;
 	private RepositorioDeLeiloes RepoLeilaoDao;
 	private Carteiro carteiro;
+	
+	public EncerradorDeLeilao(RepositorioDeLeiloes daoFalso) {
+		this.dao = daoFalso;
+	}
 
 	public void EcerradorDeLeilao(RepositorioDeLeiloes RepoLeilaoDao, Carteiro carteiro) {
 		this.RepoLeilaoDao = RepoLeilaoDao;
@@ -50,5 +54,10 @@ public class EncerradorDeLeilao {
 
 	public int getTotalEncerrados() {
 		return this.total;
+	}
+
+	public Object getQuantidadeDeEncerrados() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

@@ -1,14 +1,17 @@
 package com.mycompany.leilao;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+
+
 public class Lance {
     private double valor;
     private Usuario usuario;
     
   
 	assertThat(maiores, hasItems(
-        new Lance(maria, 400.0)
-        new Lance(joao, 300.0)
-        new Lance(maria, 200.0)
+        new Lance(maria, equalTo(400.0))
+        new Lance(joao, equalTo(300.0)),
+        new Lance(maria, equalTo(200.0))
     ));
     
     public Lance(Usuario usuario, double valor){

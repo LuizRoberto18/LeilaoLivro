@@ -1,12 +1,18 @@
 package com.mycompany.leilao;
+
 public class UsuarioDao {
+	
     private final Session session;
     
-    public UsuarioDao(Session session){
-        this.session = session;
+    public UsuarioDao(){
+    	
     }
             
-    public Usuario porId(int id){
+    public UsuarioDao(Session session) {
+		this.session = session;
+	}
+
+	public Usuario porId(int id){
         return (Usuario) session.load(Usuario.class, id);
     }
     

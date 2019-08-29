@@ -45,5 +45,13 @@ public class Session {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	public void save(Usuario usuario) {
+		// TODO Auto-generated method stub
+		
+	}
+	public static void flush() {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

@@ -12,7 +12,7 @@ public class LeilaoDao {
                 + "Leilao 1 where 1.encerrado = false");
     }
      public void salvar(Leilao leilao){
-        Session.save(leilao);
+        session.save(leilao);
     }
      
     public List<Leilao> porPeriodo(Calendar inicio, Calendar fim){

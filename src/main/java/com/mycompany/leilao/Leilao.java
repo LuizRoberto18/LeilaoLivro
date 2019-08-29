@@ -57,7 +57,7 @@ public class Leilao {
 		this.data = data;
 	}
 
-	boolean iSEncerrado() {
+	public boolean iSEncerrado() {
 		throw new UnsupportedOperationException("Not supported yet."); // To change body of generated methods, choose
 																		// Tools | Templates.
 	}

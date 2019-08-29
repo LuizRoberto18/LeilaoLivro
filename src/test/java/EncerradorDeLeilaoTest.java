@@ -4,6 +4,7 @@ import com.mycompany.leilao.EncerradorDeLeilao;
 import com.mycompany.leilao.Leilao;
 import com.mycompany.leilao.LeilaoDao;
 import com.mycompany.leilao.LeilaoDaoFalso;
+import com.mycompany.leilao.RepositorioDeLeiloes;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
@@ -76,5 +77,10 @@ public class EncerradorDeLeilaoTest {
         verify(daoFalso).atualiza(leilao2);
         verify(carteiroFalso).envia(leilao2);
     }
+
+	private EnviadorDeEmail mock(Class<EnviadorDeEmail> class1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
     
 }

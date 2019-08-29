@@ -6,7 +6,9 @@ import org.junit.Test;
 
 public class LeilaoTest {
     
-    @Test
+    private int ultimo;
+
+	@Test
     public void deveReceberUmLance(){
         Leilao leilao = new Leilao("Macbook pro 15");
         assertEquals(0, leilao.getLances().size());

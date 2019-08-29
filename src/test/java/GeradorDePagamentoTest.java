@@ -4,17 +4,23 @@ import com.mycompany.leilao.CriadorDeLeilao;
 import com.mycompany.leilao.GeradorDePagamento;
 import com.mycompany.leilao.Leilao;
 import com.mycompany.leilao.Pagamento;
+import com.mycompany.leilao.Relogio;
+import com.mycompany.leilao.RepositorioDeLeiloes;
 import com.mycompany.leilao.RepositorioDePagamentos;
 import com.mycompany.leilao.Usuario;
 import java.util.Arrays;
 import java.util.Calendar;
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
 
 public class GeradorDePagamentoTest {
     
-    @Test
+    private Relogio relogio;
+
+	@Test
     public void deveGerarPagamentoParaUmLeilaoEncerrado(){
         
         RepositorioDeLeiloes leiloes = mock(RepositorioDeLeiloes.class);
@@ -42,7 +48,12 @@ public class GeradorDePagamentoTest {
         assertEquals(2500.0, pagamentoGerado.getValor(), 0.00001);
     }
     
-    @Test
+    private RepositorioDeLeiloes mock(Class<RepositorioDeLeiloes> class1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Test
     public  void deveEmpurrarParaProximoDiaUtil(){
         RepositorioDeLeiloes leiloes = mock(RepositorioDeLeiloes.class);
         RepositorioDePagamentos pagamentos = mock(RepositorioDePagamentos.class);
@@ -71,4 +82,14 @@ public class GeradorDePagamentoTest {
         assertEquals(Calendar.MONDAY, pagamentoGerado.getData().get(Calendar.DAY_OF_WEEK));
         assertEquals(9, pagamentoGerado.getData().get(Calendar.DAY_OF_MONTH));   
     }
+
+	private Object when(List<Leilao> encerrados) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private Object verify(RepositorioDePagamentos pagamentos) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

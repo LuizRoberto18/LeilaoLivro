@@ -12,7 +12,7 @@ public class UsuarioDaoTest {
     
     @Test
     public void deveEncontrarPeloNomeEEmailMockado(){
-        Session session = new CriadordeSessao().getSession();
+        Session session = new CriadorDeSesssao().getSession();
         Query query = Mockito.mock(Query.class);
         UsuarioDao usuarioDao = new UsuarioDao(session);
         
@@ -34,7 +34,7 @@ public class UsuarioDaoTest {
         
         Usuario usuario = new Usuario("mauricio aniche", "mauricio@aniche.com.br");
         
-        UsuarioDao usuarioDao;
+        UsuarioDao usuarioDao = new UsuarioDao();
 		usuarioDao.salvar(usuario);
         usuarioDao.deletar(usuario);
         
