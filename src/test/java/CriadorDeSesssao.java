@@ -1,4 +1,4 @@
-import com.mycompany.leilao.Session;
+import edu.ifal.br.modelo.Session;
 
 public class CriadorDeSesssao {
 

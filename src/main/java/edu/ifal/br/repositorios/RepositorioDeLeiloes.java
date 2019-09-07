@@ -1,6 +1,8 @@
-package com.mycompany.leilao;
+package edu.ifal.br.repositorios;
 
 import java.util.List;
+
+import edu.ifal.br.modelo.Leilao;
 
 public class RepositorioDeLeiloes {
 

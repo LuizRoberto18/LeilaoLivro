@@ -1,12 +1,13 @@
 
-import com.mycompany.leilao.Session;
-import com.mycompany.leilao.Usuario;
-import com.mycompany.leilao.UsuarioDao;
 import org.junit.After;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import org.junit.Before;
 import org.junit.Test;
+
+import edu.ifal.br.dao.UsuarioDao;
+import edu.ifal.br.modelo.Session;
+import edu.ifal.br.modelo.Usuario;
 
 public class UsuarioDaoTests {
     

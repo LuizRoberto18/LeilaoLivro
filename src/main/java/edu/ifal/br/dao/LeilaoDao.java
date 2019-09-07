@@ -1,7 +1,10 @@
-package com.mycompany.leilao;
+package edu.ifal.br.dao;
 
 import java.util.Calendar;
 import java.util.List;
+
+import edu.ifal.br.modelo.Leilao;
+import edu.ifal.br.modelo.Session;
 
 public class LeilaoDao {
 	

@@ -1,4 +1,4 @@
-package com.mycompany.leilao;
+package edu.ifal.br.modelo;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 

@@ -1,4 +1,4 @@
-package com.mycompany.leilao;
+package edu.ifal.br.modelo;
 
 import java.util.Calendar;
 

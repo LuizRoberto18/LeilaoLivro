@@ -1,16 +1,18 @@
 
 
-import com.mycompany.leilao.Avaliador;
-import com.mycompany.leilao.CriadorDeLeilao;
-import com.mycompany.leilao.Lance;
-import com.mycompany.leilao.Leilao;
-import com.mycompany.leilao.Usuario;
 import java.util.List;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 //import static org.hamcrest.Matchers.*;
 import org.junit.Assert;
 import org.junit.Test;
+
+import edu.ifal.br.criador.CriadorDeLeilao;
+import edu.ifal.br.modelo.Avaliador;
+import edu.ifal.br.modelo.Lance;
+import edu.ifal.br.modelo.Leilao;
+import edu.ifal.br.modelo.Usuario;
+
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 

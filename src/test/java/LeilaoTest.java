@@ -1,8 +1,9 @@
-import com.mycompany.leilao.Lance;
-import com.mycompany.leilao.Leilao;
-import com.mycompany.leilao.Usuario;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+
+import edu.ifal.br.modelo.Lance;
+import edu.ifal.br.modelo.Leilao;
+import edu.ifal.br.modelo.Usuario;
 
 public class LeilaoTest {
     

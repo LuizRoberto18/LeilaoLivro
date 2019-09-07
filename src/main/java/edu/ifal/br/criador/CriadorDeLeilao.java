@@ -1,6 +1,11 @@
-package com.mycompany.leilao;
+package edu.ifal.br.criador;
 
 import java.util.Calendar;
+
+import edu.ifal.br.modelo.Lance;
+import edu.ifal.br.modelo.Leilao;
+import edu.ifal.br.modelo.Session;
+import edu.ifal.br.modelo.Usuario;
 
 public class CriadorDeLeilao {
     private Leilao leilao;

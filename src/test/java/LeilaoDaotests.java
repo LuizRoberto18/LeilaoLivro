@@ -1,17 +1,18 @@
 
 
-import com.mycompany.leilao.CriadorDeLeilao;
-import com.mycompany.leilao.Leilao;
-import com.mycompany.leilao.LeilaoDao;
-import com.mycompany.leilao.Session;
-import com.mycompany.leilao.Usuario;
-import com.mycompany.leilao.UsuarioDao;
 import java.util.Calendar;
 import java.util.List;
 import org.junit.After;
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
+
+import edu.ifal.br.criador.CriadorDeLeilao;
+import edu.ifal.br.dao.LeilaoDao;
+import edu.ifal.br.dao.UsuarioDao;
+import edu.ifal.br.modelo.Leilao;
+import edu.ifal.br.modelo.Session;
+import edu.ifal.br.modelo.Usuario;
 
 public class LeilaoDaotests {
     

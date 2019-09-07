@@ -1,4 +1,7 @@
-package com.mycompany.leilao;
+package edu.ifal.br.dao;
+
+import edu.ifal.br.modelo.Session;
+import edu.ifal.br.modelo.Usuario;
 
 public class UsuarioDao {
 	

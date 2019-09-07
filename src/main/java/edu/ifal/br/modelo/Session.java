@@ -1,4 +1,4 @@
-package com.mycompany.leilao;
+package edu.ifal.br.modelo;
 public class Session {
     
    private String session;
@@ -22,11 +22,11 @@ public class Session {
         this.session = session;
     }
 
-    void delete(Usuario usuario) {
+    public void delete(Usuario usuario) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void save(Leilao leilao) {
+    public void save(Leilao leilao) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 	public static Object createQuery(String string) {

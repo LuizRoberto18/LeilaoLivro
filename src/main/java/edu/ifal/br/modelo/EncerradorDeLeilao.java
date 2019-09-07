@@ -1,8 +1,10 @@
-package com.mycompany.leilao;
+package edu.ifal.br.modelo;
 
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+
+import edu.ifal.br.repositorios.RepositorioDeLeiloes;
 
 public class EncerradorDeLeilao {
 

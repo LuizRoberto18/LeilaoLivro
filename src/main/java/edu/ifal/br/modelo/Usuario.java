@@ -1,8 +1,8 @@
-package com.mycompany.leilao;
+package edu.ifal.br.modelo;
 
 import java.util.List;
 
-import com.mycompany.leilao.Lance;
+import edu.ifal.br.modelo.Lance;
 
 public class Usuario {
     

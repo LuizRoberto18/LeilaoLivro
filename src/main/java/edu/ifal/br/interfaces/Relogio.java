@@ -1,4 +1,4 @@
-package com.mycompany.leilao;
+package edu.ifal.br.interfaces;
 
 import java.util.Calendar;
 

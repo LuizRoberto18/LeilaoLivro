@@ -1,7 +1,11 @@
-package com.mycompany.leilao;
+package edu.ifal.br.modelo;
 
 import java.util.Calendar;
 import java.util.List;
+
+import edu.ifal.br.interfaces.Relogio;
+import edu.ifal.br.repositorios.RepositorioDeLeiloes;
+import edu.ifal.br.repositorios.RepositorioDePagamentos;
 
 public class GeradorDePagamento {
   private final RepositorioDePagamentos pagamentos;

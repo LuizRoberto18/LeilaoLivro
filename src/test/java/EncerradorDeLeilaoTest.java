@@ -1,15 +1,17 @@
 
-import com.mycompany.leilao.CriadorDeLeilao;
-import com.mycompany.leilao.EncerradorDeLeilao;
-import com.mycompany.leilao.Leilao;
-import com.mycompany.leilao.LeilaoDao;
-import com.mycompany.leilao.LeilaoDaoFalso;
-import com.mycompany.leilao.RepositorioDeLeiloes;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+
+import edu.ifal.br.criador.CriadorDeLeilao;
+import edu.ifal.br.dao.LeilaoDao;
+import edu.ifal.br.dao.LeilaoDaoFalso;
+import edu.ifal.br.modelo.EncerradorDeLeilao;
+import edu.ifal.br.modelo.Leilao;
+import edu.ifal.br.repositorios.RepositorioDeLeiloes;
+
 import static org.junit.Assert.assertTrue;
 
 

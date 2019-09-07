@@ -1,6 +1,8 @@
-package com.mycompany.leilao;
+package edu.ifal.br.modelo;
 
 import java.util.Calendar;
+
+import edu.ifal.br.interfaces.Relogio;
 
 public class RelogioDoSistema implements Relogio{
     @Override

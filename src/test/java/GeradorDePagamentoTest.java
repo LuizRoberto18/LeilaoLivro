@@ -1,13 +1,4 @@
 
-import com.mycompany.leilao.Avaliador;
-import com.mycompany.leilao.CriadorDeLeilao;
-import com.mycompany.leilao.GeradorDePagamento;
-import com.mycompany.leilao.Leilao;
-import com.mycompany.leilao.Pagamento;
-import com.mycompany.leilao.Relogio;
-import com.mycompany.leilao.RepositorioDeLeiloes;
-import com.mycompany.leilao.RepositorioDePagamentos;
-import com.mycompany.leilao.Usuario;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
@@ -15,6 +6,16 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
+
+import edu.ifal.br.criador.CriadorDeLeilao;
+import edu.ifal.br.interfaces.Relogio;
+import edu.ifal.br.modelo.Avaliador;
+import edu.ifal.br.modelo.GeradorDePagamento;
+import edu.ifal.br.modelo.Leilao;
+import edu.ifal.br.modelo.Pagamento;
+import edu.ifal.br.modelo.Usuario;
+import edu.ifal.br.repositorios.RepositorioDeLeiloes;
+import edu.ifal.br.repositorios.RepositorioDePagamentos;
 
 public class GeradorDePagamentoTest {
     
